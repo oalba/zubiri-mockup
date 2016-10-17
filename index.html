@@ -4,17 +4,22 @@
         <title></title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <!-- Override BT CSS -->
+        <link rel="stylesheet" href="./style.css">
+        
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-2">
                     <img src="img/logoZubiri.png" class="img-responsive"></img>
@@ -23,64 +28,125 @@
                     <img src="img/logoCubos.png" class="img-responsive"></img>
                 </div>
                 <div class="col-xs-offset-6 col-sm-offset-0 col-xs-4">
-                    <img src="img/logoGV.png" class="img-responsive"></img>
+                    <img src="img/logoGV.png" class="img-responsive pull-right"></img>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <!--<img src="img/header.png" class="img-responsive"></img>-->
-                    <nav class="navbar navbar-default">
-                      <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarZubiri" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                          <a class="navbar-brand" href="#">Zubiri</a>
-                        </div>
+                <nav class="navbar">
                     
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="navBarZubiri">
-                          <ul class="nav navbar-nav">
-                            <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Nosotros<span class="sr-only">(current)</span></a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-education"></span> Formación</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-send"></span> Proyectos</a></li>
-                            <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div><!-- /.navbar-collapse -->
-                      </div><!-- /.container-fluid -->
-                    </nav>
-                </div>
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarZubiri" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Zubiri</a>
+                    </div>
+                
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navBarZubiri">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Nosotros<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-education"></span> Formación</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-send"></span> Proyectos</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                  
+                </nav>
 
-            </div><!-- row -->
+            </div><!-- row NAVBAR -->
             <div class="row">
-                <div class="col-md-3 col-sm-4 hidden-xs">
-                    <img src="img/sideNavIzda.png" class="img-responsive"></img>
+                <div class="col-xs-12"><h1>News & Events</h1></div>
+                <div class="col-xs-12 col-md-7">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="#" class="thumbnail">
+                                <div class="row">
+                                    <div class="col-xs-7">
+                                        <img src="./img/zubiri.jpg" alt="zubiri" class="thumbnail1 img-responsive">
+                                    </div>
+                                    <div class="col-xs-5">
+                                        <h3>Lorem Ipsum</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus quis porta leo. Etiam sit amet nunc eget mauris tempus porttitor.
+                                        Pellentesque blandit aliquam lacus, quis bibendum ligula rhoncus a.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-sm-8">
-                    <img src="img/ContentPost.png" class="img-responsive"></img>
+                <div class="col-xs-12 col-md-5">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="#" class="thumbnail">
+                              <div class="row">
+                                    <div class="col-xs-5">
+                                        <img src="./img/zubiri.jpg" alt="zubiri" class="thumbnail23 img-responsive">
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <h3>Lorem Ipsum</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus quis porta leo. Etiam sit amet nunc eget mauris tempus porttitor.
+                                        Pellentesque blandit aliquam lacus, quis bibendum ligula rhoncus a.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12">
+                            <a href="#" class="thumbnail">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <img src="./img/zubiri.jpg" alt="zubiri" class="thumbnail23 img-responsive">
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <h3>Lorem Ipsum</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus quis porta leo. Etiam sit amet nunc eget mauris tempus porttitor.
+                                        Pellentesque blandit aliquam lacus, quis bibendum ligula rhoncus a.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 visible-md visible-lg">
-                    <img src="img/sideNavDcha.png" class="img-responsive"></img>
+            </div><!-- row News & Events -->
+            
+            <div class="row hezkuntza">
+                <div class="col-xs-12"><h1>Hezkuntza eskaintza</h1></div>
+
+            </div><!-- row Hezkuntza eskaintza -->
+            
+            
+            
+            
+            
+            
+            <div class="row contact text-center">
+                <div class="col-md-4 font-face-primary" style="padding: 20px 0px;">
+                    <a class="contact-details" href="https://maps.google.com/?q=43.3273847,-1.9708781" target="_blank">
+                        <p><i class="fa fa-map-marker"></i> C/ Jose Miguel Barandiaran, 12, 20013 San Sebastián</p>
+                    </a>
                 </div>
-            </div><!-- row -->
+                <div class="col-md-4 font-face-primary" style="padding: 20px 0px;"> 
+                    <a class="contact-details" href="tel:943278700">
+                        <p><i class="fa fa-phone-square"></i> 943 27 87 00</p>
+                    </a>
+                </div>
+                <div class="col-md-4 font-face-primary" style="padding: 20px 0px;"> 
+                    <a class="contact-details" href="mailto:bhi@zubirimanteo.com " target="_top">
+                        <p><i class="fa fa-envelope"></i> bhi@zubirimanteo.com </p>
+                    </a>
+                </div>
+            </div>
             <div class="row">
-                <img src="img/footer.png" class="img-responsive"></img>
-            </div><!-- row -->
+                <!--<div class="col-xs-12">-->
+                <img src="img/pie.jpg" class="img-responsive" style="width: 100%; padding-left: 0px;"></img>
+                <!--</div>-->
+            </div><!-- row Contact -->
         </div><!-- container -->
     </body>
 </html>

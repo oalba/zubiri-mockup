@@ -1,0 +1,61 @@
+.navbar {
+
+    border: none !important;
+    background-color: #009ae0 !important;
+    border-radius: 0px !important;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.thumbnail1 {
+    
+    margin-left: 0px !important;
+    max-height: 300px;
+}
+
+.thumbnail23 {
+    
+    margin-left: 0px !important;
+    max-height: 200px;
+}
+
+.thumbnail {
+
+    padding: 0px !important;
+    border-radius: 0px !important;
+}
+
+.contact {
+    
+    background-color: #009ae0;
+    height: auto;
+}
+
+.font-face-primary>a, .font-face-primary>a:hover {
+    
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.hezkuntza {
+    
+    height: 500px;
+    background-color: rgba(0, 154, 224, 0.20);
+}
