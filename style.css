@@ -1,10 +1,26 @@
+.parallax-window {
+    min-height: 750px;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+}
+
 .navbar {
 
     border: none !important;
-    background-color: #009ae0 !important;
+    background-color: #4e84c4 !important;
     border-radius: 0px !important;
     margin-top: 20px;
+    margin-bottom: 0px !important;
     height: 40px;
+    z-index: 1 !important;
+}
+
+.navbar-fixed-top {
+    z-index: 9999 !important;
+    margin-top: 0px !important;
 }
 
 .navbar .navbar-brand {
@@ -17,6 +33,26 @@
     padding: 10px 15px;
     color: white;
     text-transform: uppercase;
+}
+
+.navbar-collapse{
+    background-color: #4e84c4 !important;
+}
+
+.navbar-collapse>li:hover {
+    background-color: #009ae0 !important;
+}
+
+.nav>li>a:hover {
+    background-color: #009ae0 !important;
+}
+
+/*.navbar-toggle {
+    background-color: #009ae0 !important;
+}*/
+
+.icon-bar {
+    background-color: white !important;
 }
 
 .thumbnail1 {
@@ -57,5 +93,94 @@
 .hezkuntza {
     
     height: 500px;
-    background-color: rgba(0, 154, 224, 0.20);
+    background-color: #4e84c4;
+}
+
+.white-title {
+    
+    color: #ffffff;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.eskaintza {
+    
+    overflow: auto;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.eskaintza>li {
+    
+    display: inline;
+    list-style-type: none;
+}
+
+.btn-eskaintza {
+    
+    color: #333 !important;
+    background-color: #ffffff !important;
+    border: none !important;
+    border-radius: 0px !important;
+    background-image: none !important;
+    height: 50px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 12px 12px !important;
+    font-weight: 700 !important;
+    padding: 12px 20px !important;
+    margin: 20px 2px;
+}
+
+.padding-0 {
+    
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.img-slide {
+    
+    height: 750px !important;
+    width: 100%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 850px;
+  position: relative;
+}
+
+.news {
+
+    border-top: #337ab7 5px solid;
+}
+
+.eskaintza-wrapper {
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.eskaintza-card {
+    
+    display: block;
+    background-color: white;
+    height: 275px;
+}
+
+.static-menu {
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 0px;
+    display: block;
+    z-index: 2 !important;
 }

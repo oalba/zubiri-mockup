@@ -14,11 +14,112 @@
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script   src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+        
+        <script src="bower_components/parallax.js/parallax.js"></script>
+        <script type="text/javascript">
+    
+    function showDiv(zein) {
+        var mydiv = document.getElementById(zein);
+        if (zein == 'dbh'){
+            document.getElementById('dbh').style.display = 'block';
+            document.getElementById('batx').style.display = 'none';
+            document.getElementById('em').style.display = 'none';
+            document.getElementById('gm').style.display = 'none';
+        } else if (zein == 'batx'){
+            document.getElementById('dbh').style.display = 'none';
+            document.getElementById('batx').style.display = 'block';
+            document.getElementById('em').style.display = 'none';
+            document.getElementById('gm').style.display = 'none';
+        } else if (zein == 'em'){
+            document.getElementById('dbh').style.display = 'none';
+            document.getElementById('batx').style.display = 'none';
+            document.getElementById('em').style.display = 'block';
+            document.getElementById('gm').style.display = 'none';
+        } else if (zein == 'gm'){
+            document.getElementById('dbh').style.display = 'none';
+            document.getElementById('batx').style.display = 'none';
+            document.getElementById('em').style.display = 'none';
+            document.getElementById('gm').style.display = 'block';
+        }
+        mydiv.className = 'col-xs-6 col-xs-offset-3';
+        
+    }
+
+
+
+
+    function showDenak2(a1,a2,a3,a4) {
+    
+        var aa1 = document.getElementById(a1);
+        var aa2 = document.getElementById(a2);
+        var aa3 = document.getElementById(a3);
+        var aa4 = document.getElementById(a4);
+        aa1.style.display = 'block';
+        aa2.style.display = 'block';
+        aa3.style.display = 'block';
+        aa4.style.display = 'block';
+        aa1.className = 'col-xs-3';
+        aa2.className = 'col-xs-3';
+        aa3.className = 'col-xs-3';
+        aa4.className = 'col-xs-3';
+
+    }
+    
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+        if (document.body.scrollTop > 106 || document.documentElement.scrollTop > 106) {
+            //alert();
+            var a = document.getElementById("navbar");
+            a.className = "navbar navbar-fixed-top";
+        } else {
+            var a = document.getElementById("navbar");
+            a.className = "navbar nav";
+        }
+    }
+    
+    
+        
+       /* window.addEventListener('scroll',skroll,true);
+        function skroll(event) {
+    
+        var x = document.getElementsByClassName("navbar")[0];
+    
+        var y = window.scrollY;
+        //alert(y);
+        
+        if (y >= 100) {
+            x.className += " navbar-fixed-top";
+        } 
+    }
+    */
+    
+    
+    
+    
+    /*$("document").ready(function($){
+    var nav = $('.navbar');
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 125) {
+            nav.addClass("static-menu");
+        } else {
+            nav.removeClass("static-menu");
+        }
+    });
+});*/
+    
+    
+    
+    </script>
     </head>
     <body>
+        
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-2">
@@ -31,10 +132,10 @@
                     <img src="img/logoGV.png" class="img-responsive pull-right"></img>
                 </div>
             </div>
+            
             <div class="row">
-                <nav class="navbar">
+                <nav class="navbar" id="navbar">
                     
-                  <div class="container-fluid">
                     <div class="navbar-header">
                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarZubiri" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -53,12 +154,25 @@
                         <li><a href="#"><span class="glyphicon glyphicon-send"></span> Proyectos</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
-                  </div><!-- /.container-fluid -->
                   
                 </nav>
-
             </div><!-- row NAVBAR -->
+            
             <div class="row">
+                <div class="col-md-12 padding-0">
+                    
+                    <div class="overlay">
+                        <div class="parallax-window" data-parallax="scroll" data-image-src="/img/donos.jpg" class="img-responsive img-slide" alt="Responsive image">
+                            
+                            <br/><h1 class="white-title text-center">IES Zubiri Manteo BHI</h1>
+                            
+                        </div>
+                    </div>                    
+                    
+                </div>
+            </div><!-- Slider -->
+
+            <div class="row news">
                 <div class="col-xs-12"><h1>News & Events</h1></div>
                 <div class="col-xs-12 col-md-7">
                     <div class="row">
@@ -68,7 +182,7 @@
                                     <div class="col-xs-7">
                                         <img src="./img/zubiri.jpg" alt="zubiri" class="thumbnail1 img-responsive">
                                     </div>
-                                    <div class="col-xs-5">
+                                    <div class="col-xs-4">
                                         <h3>Lorem Ipsum</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Phasellus quis porta leo. Etiam sit amet nunc eget mauris tempus porttitor.
@@ -87,7 +201,7 @@
                                     <div class="col-xs-5">
                                         <img src="./img/zubiri.jpg" alt="zubiri" class="thumbnail23 img-responsive">
                                     </div>
-                                    <div class="col-xs-7">
+                                    <div class="col-xs-6">
                                         <h3>Lorem Ipsum</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Phasellus quis porta leo. Etiam sit amet nunc eget mauris tempus porttitor.
@@ -102,7 +216,7 @@
                                     <div class="col-xs-5">
                                         <img src="./img/zubiri.jpg" alt="zubiri" class="thumbnail23 img-responsive">
                                     </div>
-                                    <div class="col-xs-7">
+                                    <div class="col-xs-6">
                                         <h3>Lorem Ipsum</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Phasellus quis porta leo. Etiam sit amet nunc eget mauris tempus porttitor.
@@ -114,16 +228,76 @@
                     </div>
                 </div>
             </div><!-- row News & Events -->
-            
-            <div class="row hezkuntza">
-                <div class="col-xs-12"><h1>Hezkuntza eskaintza</h1></div>
 
+            <div class="row hezkuntza">
+                    <div class="col-xs-12 white-title"><h1>Hezkuntza eskaintza</h1></div>
+                    
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="eskaintza">
+                                    <li><a class="m-b-1 btn btn-eskaintza m-r-0-5 filter-denak" onclick="showDenak2('dbh','batx','em','gm')">Denak</a></li>
+                                    <li><a class="m-b-1 btn btn-eskaintza m-r-0-5 filter-dbh" onclick="showDiv('dbh')">DBH</a></li>
+                                    <li><a class="m-b-1 btn btn-eskaintza m-r-0-5 filter-batxi " onclick="showDiv('batx')">Batxilergoa</a></li>
+                                    <li><a class="m-b-1 btn btn-eskaintza m-r-0-5 filter-erdimaila" onclick="showDiv('em')">Erdi Maila</a></li>
+                                    <li><a class="m-b-1 btn btn-eskaintza m-r-0-5 filter-goimaila" onclick="showDiv('gm')">Goi Maila</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12">
+                        <div class="row eskaintza-wrapper">
+                            <div class="col-xs-3 eskaintza-card" id="dbh">
+                                <div class="card-img-overlay display-hover">
+                                    <h2 class="card-title text-xs-center">DBH</h2>
+                                    <p>Edozein motatako batxilergo zein erdi mailako Heziketa Ziklotako ikasketak burutzeko beharrezko DBH-ko eskaintza.</p>
+                                    <ul>
+                                        <li class="card-subtext font-size-sm text-xs-center">1. Zikloa (1.DBH eta 2.DBH)</li>
+                                        <li class="card-subtext font-size-sm text-xs-center">2. Zikloa (3.DBH)</li>
+                                        <li class="card-subtext font-size-sm text-xs-center">2. Zikloa (4.DBH)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                
+                            <div class="col-xs-3 eskaintza-card" id="batx">
+                                <div class="card-img-overlay display-hover">
+                                    <h2 class="card-title text-xs-center">Batxilergoa</h2>
+                                    <p>Giza, zientzia eta teknologiarekin zerikusirik dituzten unibertsitateko zein goi mailako heziketa zikloko ikasketak burutzeko beharrezko batxilergoen eskaintza.</p>
+                                    <ul>
+                                        <li class="card-subtext font-size-sm text-xs-center">Zientziak Batxilergoa</li>
+                                        <li class="card-subtext font-size-sm text-xs-center">Giza eta Gizarte Zientzien Batxilergoa</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                            <div class="col-xs-3 eskaintza-card" id="em">
+                                <div class="card-img-overlay display-hover">
+                                    <h2 class="card-title text-xs-center">Erdi Maila</h2>
+                                    <p>Donostiaren ezaugarriak kontutan izanik, zerbitzuetako heziketa zikloak eskaintzen dira: Informatika, Merkataritza eta Administrazio familietako zikloak.</p>
+                                    <ul>
+                                        <li class="card-subtext font-size-sm text-xs-center">Merkataritza eta Marketina</li>
+                                        <li class="card-subtext font-size-sm text-xs-center">Administrazioa</li>
+                                        <li class="card-subtext font-size-sm text-xs-center">Informatika</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                            <div class="col-xs-3 eskaintza-card" id="gm">
+                                <div class="card-img-overlay display-hover">
+                                    <h2 class="card-title text-xs-center">Goi maila</h2>
+                                    <p>Donostiaren ezaugarriak kontutan izanik, zerbitzuetako heziketa zikloak eskaintzen dira: Informatika, Turismo, Merkataritza eta Administrazio familietako zikloak.</p>
+                                    <ul>
+                                        <li class="card-subtext font-size-sm text-xs-center">Merkataritza eta Marketina</li>
+                                        <li class="card-subtext font-size-sm text-xs-center">Hostalaritza eta Turismoa</li>
+                                        <li class="card-subtext font-size-sm text-xs-center">Administrazioa</li>
+                                        <li class="card-subtext font-size-sm text-xs-center">Informatika</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div><!-- row Hezkuntza eskaintza -->
-            
-            
-            
-            
-            
             
             <div class="row contact text-center">
                 <div class="col-md-4 font-face-primary" style="padding: 20px 0px;">
@@ -143,10 +317,12 @@
                 </div>
             </div>
             <div class="row">
-                <!--<div class="col-xs-12">-->
-                <img src="img/pie.jpg" class="img-responsive" style="width: 100%; padding-left: 0px;"></img>
-                <!--</div>-->
+                <div class="col-xs-12 padding-0"><center>
+                    <img src="img/foot.PNG" class="img-responsive " style="width: 50%; position:absolute;"></img></center>
+                    <img src="img/pie.jpg" class="img-responsive" style="width: 100%; padding-left: 0px;"></img>
+                </div>
             </div><!-- row Contact -->
-        </div><!-- container -->
+    </div>
+    
     </body>
 </html>
